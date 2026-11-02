@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Lunch | RSVP</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">Birthday Lunch ♡</a>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="rsvp.html" class="active">RSVP</a>
+        </nav>
+    </header>
+
+    <main class="rsvp-page">
+        <section class="rsvp-card">
+            <p class="eyebrow">LET'S CELEBRATE</p>
+
+            <h1>You're Invited!</h1>
+
+            <p class="rsvp-intro">
+                I'd love to celebrate this special day with you.
+                Please confirm your attendance below.
+            </p>
+
+            <div class="event-summary">
+                <p><strong>Date:</strong> Saturday, 26 December 2026</p>
+                <p><strong>Time:</strong> 4:00 PM</p>
+                <p><strong>Dress code:</strong> Burgundy with a touch of black</p>
+            </div>
+
+           <form
+    action="https://formsubmit.co/fostermonique01@gmail.com"
+    method="POST"
+    id="rsvpForm"
+    >
+                <label for="guestName">Your full name</label>
+                <input
+                    type="text"
+                    id="guestName"
+                    name="guestName"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <label for="guestEmail">Email address</label>
+                <input
+                    type="email"
+                    id="guestEmail"
+                    name="guestEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <label for="attendance">Will you be attending?</label>
+                <select id="attendance" name="attendance" required>
+                    <option value="">Select your response</option>
+                    <option value="Yes, I'll be there">Yes, I'll be there!</option>
+                    <option value="Sorry, I can't attend">
+                        Sorry, I can't attend
+                    </option>
+                </select>
+
+                <label for="message">A little birthday message (optional)</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Write a sweet message..."
+                    rows="4"
+                ></textarea>
+
+                <button type="submit" class="button">
+                    SUBMIT RSVP ♡
+                </button>
+
+                <p id="responseMessage" aria-live="polite"></p>
+
+            </form>
+
+            <a href="home.html" class="back-link">
+                ← Back to Home
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        FOOD <span>•</span> FRIENDS <span>•</span> BIRTHDAY VIBES
+        <p>Made with love ♡</p>
+    </footer>
+
+</body>
+</html>
