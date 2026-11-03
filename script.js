@@ -12,7 +12,7 @@ rsvpForm.addEventListener("submit", function(event) {
 
     const formData = new FormData(rsvpForm);
 
-    fetch("https://formsubmit.co/ajax/leighraebooysen9@gmail.com", {
+    fetch("https://formsubmit.co/fostermonique01@gmail.com", {
         method: "POST",
         body: formData
     })
